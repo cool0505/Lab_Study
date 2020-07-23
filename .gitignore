@@ -1,5 +1,8 @@
 *.class
 
+#setting file
+.idea
+
 # Log file
 *.loglass
 
