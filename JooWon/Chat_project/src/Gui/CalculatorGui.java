@@ -10,6 +10,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+import javax.swing.border.EmptyBorder;
+
 import Action.Calculate;
 public class CalculatorGui extends JFrame {
 	
@@ -17,10 +19,12 @@ public class CalculatorGui extends JFrame {
 		Calculate C = new Calculate();
 		setTitle("계산기");
 		setSize(286,500);
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		JPanel contentPane = new JPanel();
 		setContentPane(contentPane);
+		contentPane.setBorder(new EmptyBorder(5, 200, 5,200));
 		contentPane.setLayout(null);
 		//파라미터1 = leftMargin, 파라미터 2 = topMargin, 
 		//파라미터 3,4 = 버튼크기
