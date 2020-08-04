@@ -22,17 +22,14 @@ public class LoginGui extends JFrame {
 		setSize(400, 300);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
-		setResizable(false);
 		JPanel contentPane = new JPanel();
-		
-		contentPane.setBorder(new EmptyBorder(5, 3, 5,3));
+		//contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-
-		JLabel lblLogin = new JLabel("User name");
+		JLabel lblLogin = new JLabel("username");
 		lblLogin.setBounds(41, 52, 69, 35);
 		contentPane.add(lblLogin);
-		JLabel lblPassword = new JLabel("Pass word");
+		JLabel lblPassword = new JLabel("Password");
 		lblPassword.setBounds(41, 103, 69, 35);
 		contentPane.add(lblPassword);
 		JTextField tfUsername = new JTextField();
@@ -58,7 +55,7 @@ public class LoginGui extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("버튼이 클릭되었습니다.");
-				new JoinGui();
+				// JoinFrame frame = new JoinFrame();
 
 			}
 		});
