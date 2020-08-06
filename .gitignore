@@ -1,7 +1,7 @@
 *.class
 
 #setting file
-./.idea/*
+.idea/*
 
 # Log file
 *.loglass
